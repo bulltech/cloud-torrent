@@ -1,7 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+li:last-child {
+    border-right: none;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #111;
+}
+.active {
+    background-color: #4CAF50;
+}
+</style>
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=892996750807543";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+</head>
+</html>
 <html ng-app="app" >
 	<head>
-		<title ng-bind="state.Stats.Title">Cloud Torrent</title>
+		<title ng-bind="state.Stats.Title">uTorrent Stream</title>
     	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="google-site-verification" content="PqSTdiPeY8smrlFPrsHEAVAMf3cTY_vmy_3Hgal_Xzw" />
+		<meta content='utorrent stream,utorrent,stream,torrent,utorrentstream.com,torrent download,download,free' name='keywords'/>
+		<meta content='all' name='robots'/>
+                <meta content='index, follow' name='robots'/>
+		<meta content='English' name='language'/>
 		<link rel="stylesheet" type="text/css" href="css/Lato/Lato.css">
 		<link rel="stylesheet" type="text/css" href="css/semantic.min.css">
 		<link rel="stylesheet" type="text/css" href="css/app.css">
@@ -22,14 +69,15 @@
 		<!-- TITLE ===================== -->
 		<div class="title">
 			<h2>
-				<a href="https://github.com/jpillora/cloud-torrent"
-					target="_blank"
+				<a href="Bull Torrent"
+					target="_self"
 					ng-init="logoHover = false"
 					ng-mouseover="logoHover = true"
 					ng-mouseleave="logoHover = false">
 					<i class="blue icon" ng-class="{cloud:!logoHover, github: logoHover}"></i>  {{ state.Stats.Title }}
 				</a>
 			</h2>
+			<center><p><b>Please enter any query, Torrent URL or Magnet URI</b></p></center>
 			<div class="status">
 				<i ng-show="request.count > 0"
 					class="ui circular loading repeat icon"></i>
@@ -51,15 +99,33 @@
 
 		<section class="config" ng-controller="ConfigController" ng-include src="'template/config.html'"></section>
 		<section class="omni" ng-controller="OmniController" ng-include src="'template/omni.html'"></section>
+		<center><img src="" alt="Updates" ></center>
 		<section class="torrents" ng-controller="TorrentsController" ng-include src="'template/torrents.html'"></section>
+		<br>
+		<center><br><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Mobile Article Top Ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-3968645922999785"
+     data-ad-slot="8942294956"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+			</script><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Mobile Article Top Ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-3968645922999785"
+     data-ad-slot="8942294956"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+			</script></center>
 		<section class="downloads" ng-controller="DownloadsController" ng-include src="'template/downloads.html'"></section>
 
 		<footer>
-			<span>github.com/<a href="https://github.com/jpillora" target="_blank">jpillora</a>/<a href="https://github.com/jpillora/cloud-torrent" target="_blank">cloud-torrent</a> version {{ state.Stats.Version }}	-	</span>
-			<span ng-if="numKeys(state.Users) > 1">{{ numKeys(state.Users) }} users connected	-	</span>
-			<span><a href="https://golang.org" target="_blank">Go</a> {{ state.Stats.Runtime }}</span>
+			<span><a href="https://www.uTorrentStream.com" target="_blank">uTorrentStream.com</a>  <a href="https://www.facebook.com/mediabull" target="_blank">Made By Jazz And Bull</a></span>
+			<span><a>Online:</a></span>
+			<span ng-if="numKeys(state.Users) > 1">{{ numKeys(state.Users) }} users online.</span>
 		</footer>
-
 		<script src="js/vendor/query-string.js"></script>
 		<script src="js/vendor/angular.min.js"></script>
 		<script src="js/vendor/moment.min.js"></script>
@@ -73,4 +139,116 @@
 		<script src="js/semantic-checkbox.js"></script>
 		<script src="js/run.js"></script>
 	</div></body>
+</html>
+<br><center><script src="//blockr.io/js_external/coinwidget/coin.js"></script>
+		<script>
+			CoinWidgetCom.go({
+				wallet_address: '3DfZgFAHi1LZyV8CAi3gnnAJJ87eJ5Wtu8',
+				currency: 'bitcoin',
+				counter: 'count',
+				lbl_button: 'Donate',
+				lbl_count: 'donations',
+				lbl_amount: 'BTC',
+				lbl_address: 'Use address below to donate. Thanks!',
+				qrcode: true,
+				alignment: 'bl',
+				decimals: 8,
+				size: "big",
+				color: "light",
+				countdownFrom: "0",
+				element: "#coinwidget-bitcoin-3DfZgFAHi1LZyV8CAi3gnnAJJ87eJ5Wtu8",
+				onShow: function(){},
+				onHide: function(){}
+			});
+		</script>
+		<div id="coinwidget-bitcoin-3DfZgFAHi1LZyV8CAi3gnnAJJ87eJ5Wtu8"></div>
+	</center>
+<br><center><div class="fb-like" data-href="https://www.facebook.com/mediabull" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div></center><br>
+<center><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Mobile Article Top Ad -->
+<!-- udemyrippedcourses_header-wide_AdSense1_1x1_as -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9134457020745935"
+     data-ad-slot="3246712004"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Mobile Article Top Ad -->
+<!-- udemyrippedcourses_header-wide_AdSense1_1x1_as -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9134457020745935"
+     data-ad-slot="3246712004"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></center>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<center><script type="text/javascript"  charset="utf-8">
+<!-- Torrent Leecher center -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-9134457020745935"
+     data-ad-slot="1158726406"></ins>
+</script></center>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #4CAF50;
+}
+p {
+    text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 3px;
+}
+a {
+    text-decoration:none;
+    color: #008CBA;
+}
+</style>
+</head>
+<body>
+<div style="width:100%;border:1px solid gray;padding:8px;">
+<h1>Important Information</h1>
+<p>Data on Streaming Server is not Permanent. Please Check And Buy RDP to download data safely And Support Us. You are recommended to use VPN before downloading or using our server websites | Buy A Good Vpn . Email Support Root356545@gmail.com. | Facebook Support @ : facebook.com/mediabull .
+</div>
+</body>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+li:last-child {
+    border-right: none;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #111;
+}
+.active {
+    background-color: #4CAF50;
+}
+</style>
+</head>
 </html>
